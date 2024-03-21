@@ -8,7 +8,6 @@ function distanceFromHqInBlocks(pickupLocation) {
   console.log(distanceFromHqInBlocks(50));
   
 //function 2
-
   function distanceFromHqInFeet(pickupLocation) {
     const blocks = distanceFromHqInBlocks(pickupLocation);
     const feetPerBlock = 264;
@@ -18,7 +17,6 @@ function distanceFromHqInBlocks(pickupLocation) {
 console.log(distanceFromHqInFeet(50))
 
 //function 3
-
 function distanceTravelledInFeet(start_block, destination_block){
     const blocksTravelled=Math.abs(destination_block- start_block)
 
@@ -32,7 +30,6 @@ console.log(distanceTravelledInFeet(34,38))
 
 
 //function 4
-
 function calculatesFarePrice(start_block, destination_block){
     const feetPerBlock = 264;
     const distanceTravelled = Math.abs (destination_block - start_block) * feetPerBlock;
@@ -47,5 +44,4 @@ function calculatesFarePrice(start_block, destination_block){
         return 'cannot travel that far'
     }
 }
-
 console.log(calculatesFarePrice(34,38))
